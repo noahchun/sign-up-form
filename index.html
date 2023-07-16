@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Sign-Up</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="left">
@@ -15,14 +16,36 @@
             </div>
         </div>
         <div class="right">
+            <div class="imgContainer">
+                <img src="./images/silhouette.png" alt="silhouette">
+            </div>
             <div class="textHeader">
-                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                <p>It's time to decide our own destiny. <br>
                     Sign up <em>now</em> to get started. <br><br>
                     You <em>know</em> you want to.
                 </p>
             </div>
             <div class="signUp">
-                <p>Let's do this!</p>
+                <p>Let's do this, Star Guardian!</p>
+                <div class="formContainer">
+                    <form id="userLeftForm">
+                        <label for="first_name">First Name</label><br>
+                        <input type="text" id="first_name" required>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" required>
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password" required>
+                        <button type="submit">Confirm</button>
+                    </form>
+                    <form id="userRightForm">
+                        <label for="last_name">Last Name</label><br>
+                        <input type="text" id="first_name" required>
+                        <label for="phone">Phone Number</label><br>
+                        <input type="tel" id="phone" required>
+                        <label for="password">Confirm Password</label><br>
+                        <input type="password" id="confirm_password" required>
+                    </form>
+                </div>
             </div>
         </div>
     </body>
