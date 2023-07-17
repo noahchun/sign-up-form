@@ -102,6 +102,8 @@ body {
     font-family: 'MitogenDisplay';
     font-size: 25px;
     position: relative;
+    opacity: 0;
+    transform: translateY(35px);
     z-index: 1;
 }
 
@@ -150,6 +152,13 @@ body {
 }
 
 .formContainer.animation {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 3s;
+    z-index: 1;
+}
+
+.signUp.animation p {
     opacity: 1;
     transform: translateY(0);
     transition-duration: 3s;

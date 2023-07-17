@@ -2,9 +2,11 @@ window.addEventListener('load', function() {
     const imgContainer = document.querySelector('.imgContainer');
     const textHeader = document.querySelector('.textHeader');
     const formContainer = document.querySelector('.formContainer');
+    const signUp = document.querySelector('.signUp');
     imgContainer.classList.add('animation');
     textHeader.classList.add('dropAnimation');
     formContainer.classList.add('animation');
+    signUp.classList.add('animation');
 });
 
 var password = document.getElementById("password");
