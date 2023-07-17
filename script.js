@@ -3,10 +3,12 @@ window.addEventListener('load', function() {
     const textHeader = document.querySelector('.textHeader');
     const formContainer = document.querySelector('.formContainer');
     const signUp = document.querySelector('.signUp');
+    const bottom = document.querySelector('.bottom');
     imgContainer.classList.add('animation');
     textHeader.classList.add('dropAnimation');
     formContainer.classList.add('animation');
     signUp.classList.add('animation');
+    bottom.classList.add('animation');
 });
 
 var password = document.getElementById("password");

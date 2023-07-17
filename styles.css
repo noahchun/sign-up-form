@@ -182,6 +182,25 @@ input[type="text"]:focus {
 
 .bottom p {
     padding-left: 2%;
+    opacity: 0;
+    transform: translateY(55px);
+}
+
+.bottom.animation p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 3s;
+}
+
+.bottom a {
+    opacity: 0;
+    transform: translateY(55px);
+}
+
+.bottom.animation a {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 3s;
 }
 
 a {
