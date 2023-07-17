@@ -27,3 +27,24 @@ document.addEventListener('DOMContentLoaded', function() {
   confirm_password.addEventListener("keyup", validatePassword);
 });
 
+const svg1 = document.getElementById('svg_1');
+svg1.addEventListener("mouseenter", function() {
+  svg1.classList.add('hovered');
+});
+
+svg1.addEventListener("mouseleave", function() {
+  svg1.classList.remove('hovered');
+});
+
+var audioPlaying = true;
+const audio = document.querySelector("#audio");
+audio.volume = 0.7;
+svg1.addEventListener("click", function() {
+  if (audioPlaying) {
+    audio.pause();
+  } else {
+    audio.play();
+  }
+  audioPlaying = !audioPlaying;
+});
+

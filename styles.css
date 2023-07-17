@@ -91,6 +91,20 @@ body {
     width: 100%;
 }
 
+.svgContainer {
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    width: 5%;
+    height: 5%;
+}
+
+.hovered {
+    transform: scale(1.1);
+    border-color: #dc79ff;
+    box-shadow: 0 0 1rem #dc79ff;
+}
+
 .signUp {
     background-color: #ecb1e9;
     font-family: 'FFMark';
@@ -191,8 +205,11 @@ a {
     margin-left: 2%;
 }
 
-fieldset {
-    width: 25%;
+button {
+    background-color: #e36868;
+    border-radius: 25px;
+    padding: 15px;
+    font-family: 'FFMark';
 }
 
 
