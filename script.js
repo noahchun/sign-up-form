@@ -11,16 +11,19 @@ window.addEventListener('load', function() {
     bottom.classList.add('animation');
 });
 
-var password = document.getElementById("password");
-var confirm_password = document.getElementById("confirm_password");
+document.addEventListener('DOMContentLoaded', function() {
+  var password = document.getElementById("password");
+  var confirm_password = document.getElementById("confirm_password");
 
-function validatePassword(){
-    if(password.value != confirm_password.value) {
+  function validatePassword() {
+    if (password.value !== confirm_password.value) {
       confirm_password.setCustomValidity("Passwords Don't Match");
     } else {
       confirm_password.setCustomValidity('');
     }
-}
+  }
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+  password.addEventListener("change", validatePassword);
+  confirm_password.addEventListener("keyup", validatePassword);
+});
+
