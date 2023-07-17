@@ -103,7 +103,7 @@ body {
     font-size: 25px;
     position: relative;
     opacity: 0;
-    transform: translateY(35px);
+    transform: translateY(55px);
     z-index: 1;
 }
 
@@ -168,6 +168,24 @@ body {
 input[type="text"]:focus {
     border: 1px solid;
     border-color: #e36868;
+}
+
+.bottom {
+    display: flex;
+    background-color: #dc79ff;
+    min-height: 35%;
+    font-family: 'FFMark';
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: -10%;
+}
+
+.bottom p {
+    padding-left: 2%;
+}
+
+a {
+    margin-left: 2%;
 }
 
 
